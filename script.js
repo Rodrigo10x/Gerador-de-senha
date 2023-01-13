@@ -11,7 +11,7 @@ let novaSenha = "";
 
 sizePassword.innerHTML = sliderElement.value;
 
-slider.oniput = function(){
+slider.oninput = function(){
     sizePassword.innerHTML = this.value;
 }
 
@@ -23,6 +23,7 @@ function generatePassword(){
     }
     conteinerPassword.classList.remove("hide");
     password.innerHTML = pass;
+    novaSenha = password.innerHTML;
 }
 function copyPassword(){
     alert("Senha copiada com sucesso!")
